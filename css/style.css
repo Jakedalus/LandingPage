@@ -1,0 +1,91 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+/*   padding-top: 165px;  */
+/*  padding-top: 100px;*/
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 40px 10px;
+  width: 100%;
+  top: 0;
+
+  background-color: transparent;
+
+  
+}
+
+
+
+
+#home-page {
+/*   padding: 50px 0; */
+  font-size: 25px;
+}
+
+nav {
+  padding-top: 5px;
+}
+
+li {
+  display: inline;
+  padding: 15px;
+}
+
+main {
+/*   margin-top: 200px; */
+}
+
+section {
+  height: 300px;
+/*   padding-top: 50px; */
+/*   border: 2px solid black; */
+  margin: 0px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+section:nth-child(2n) {
+  background: lightgray;
+}
+
+.button {
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  padding: 20px 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#intro {
+  height: 800px;
+  background: gray;
+  background: no-repeat center/100% url(/images/desk_background.jpg);
+
+}
+
+#intro h1 {
+  font-size: 4em;
+}
+
+#intro h2 {
+  padding-top: 200px;
+  font-size: 3em;
+}
+
+#intro a {
+  font-size: 1.5em;
+}
+
