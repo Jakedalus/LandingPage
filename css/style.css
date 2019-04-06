@@ -74,7 +74,8 @@ main {
 }
 
 section {
-  height: 300px;
+/*  height: 300px;*/
+  height: 100%;
 /*   padding-top: 50px; */
 /*   border: 2px solid black; */
   margin: 0px auto;
@@ -135,13 +136,6 @@ section h3 {
   text-decoration: none;
 }
 
-
-
-#services {
-  height: 100%;
-  
-}
-
 .service {
   width: 350px;
 }
@@ -151,6 +145,43 @@ section h3 {
   height: 150px;
   border-radius: 100%;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.project {
+  width: 350px;
+  margin: 10px auto;
+  background: white;
+}
+
+.project img {
+  width: 350px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.project img:hover {
+  background: yellow;
+  opacity: 50%;
+}
+
+.project h4 {
+  font-size: 20px;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.project h5 {
+  font-style: italic;
+  color: darkgray;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
 
 @media (max-width: 1080px) {
   
