@@ -211,13 +211,26 @@ section h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
+  text-align: center;
+  width: 100%;
   height: 100%;
   overflow: auto;
-
+  
 }
 
+.project-detail__content {
+  background: white;
+  padding: 50px;
+  margin: 20px;
+}
 
+.close-project-detail {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  font-size: 70px;
+}
 
 @media (max-width: 1080px) {
   
