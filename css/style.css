@@ -205,6 +205,19 @@ section h3 {
   padding-bottom: 30px;
 }
 
+.project-detail {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 100%;
+  overflow: auto;
+
+}
+
+
 
 @media (max-width: 1080px) {
   
