@@ -14,7 +14,8 @@ hamburger.addEventListener('click', () => {
 const projectImages = document.querySelectorAll('.img-container');
 const projectDetails = Array.from(document.querySelectorAll('.project-detail'));
 const body = document.querySelector('body');
-console.log(projectImages, projectDetails, body);
+console.log("projectImages:", projectImages);
+console.log("projectDetails:", projectDetails);
 
 projectImages.forEach((image) => {
   image.addEventListener('click', () => {
@@ -26,7 +27,7 @@ projectImages.forEach((image) => {
     detail.style.display = 'block';
     body.style.overflow = 'hidden';
     
-    const close = document.querySelector('.close-project-detail');
+    const close = document.querySelector(`[data-project='${projectId}'] .close-project-detail`);
     console.log(close);
     close.addEventListener('click', () => {
       console.log('Clicked close!', close);
