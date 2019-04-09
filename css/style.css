@@ -1,7 +1,13 @@
+:root {
+  --offwhite: #F8F9FA;
+  --lightgray: #E9ECEF;
+}
+
 html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -84,7 +90,7 @@ section {
 }
 
 section:nth-child(2n+1) {
-  background: #F8F9FA;
+  background: var(--offwhite);
 }
 
 .row {
@@ -104,6 +110,8 @@ section h3 {
   padding-bottom: 50px;
 }
 
+
+/* INTRO SECTION */
 #intro {
   height: 600px;
   background: gray;
@@ -136,6 +144,8 @@ section h3 {
   text-decoration: none;
 }
 
+/* SERVICES SECTIONS*/
+
 .service {
   width: 350px;
 }
@@ -145,6 +155,8 @@ section h3 {
   height: 150px;
   border-radius: 100%;
 }
+
+/* PORTFOLIO SECTION */
 
 .grid {
   display: grid;
@@ -239,6 +251,66 @@ section h3 {
   cursor: pointer;
   font-size: 70px;
 }
+
+/* TIMELINE SECTION */
+
+#timeline {
+  position: relative;
+}
+
+#timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-2px);
+  width: 4px;
+  content: '';
+  background-color: var(--lightgray);
+  z-index: -1;
+/*  background-color: red;*/
+}
+
+.timeline-point {
+  display: flex;
+  margin: 100px auto;
+  width: 806px;
+  text-align: right;
+}
+
+.timeline-point--right {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.timeline-point__text {
+  width: 300px;
+  padding-right: 20px;
+}
+
+.timeline-point--right .timeline-point__text {
+  width: 300px;
+  padding-right: 0px;
+  padding-left: 20px;
+}
+
+.timeline-point img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid var(--lightgray);
+  margin-left: 0px;
+  margin-right: 320px;
+}
+
+.timeline-point--right img {
+  margin-left: 320px;
+  margin-right: 0px;
+}
+
+
+
+
 
 @media (max-width: 1080px) {
   
