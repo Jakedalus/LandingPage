@@ -27,12 +27,23 @@ projectImages.forEach((image) => {
     detail.style.display = 'block';
     body.style.overflow = 'hidden';
     
+    setTimeout(() => {
+      detail.style.top = '50%';
+      detail.style.opacity = '1';
+    }, 200);
+    
     const close = document.querySelector(`[data-project='${projectId}'] .close-project-detail`);
     console.log(close);
     close.addEventListener('click', () => {
       console.log('Clicked close!', close);
-      detail.style.display = 'none';
+      detail.style.top = '45%';
+      detail.style.opacity = '0';
       body.style.overflow = 'auto';
+      
+      setTimeout(() => {
+        detail.style.display = 'none';
+      }, 200);
+    
     });
   });
 });

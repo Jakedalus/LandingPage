@@ -209,19 +209,27 @@ section h3 {
   display: none;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
   height: 100%;
   overflow: auto;
   
+  opacity: 0;
+  
+  transition: top .2s ease-in, opacity .2s ease-in;
 }
 
 .project-detail__content {
   background: white;
   padding: 50px;
   margin: 20px;
+}
+
+.project-detail img, .project-detail p {
+  width: 700px;
+  margin: 10px auto;
 }
 
 .close-project-detail {
