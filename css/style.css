@@ -1,6 +1,7 @@
 :root {
   --offwhite: #F8F9FA;
   --lightgray: #E9ECEF;
+  --gray: #797979;
   --darkgray: #212528;
 }
 
@@ -357,8 +358,59 @@ section h3 {
 #team p {
   width: 700px;
   margin: 0 auto;
-  color: var(--darkgray);
+  color: var(--gray);
   text-align: center;
+}
+
+/* TECHNOLOGIESZ SECTION */
+
+#technologies ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+#technologies li {
+  position: relative;
+  color: var(--gray);
+  list-style: none;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+#technologies li span {
+  position: absolute;
+  padding: 5px 0;
+  width: 100px;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 20px;
+  background: var(--gray);
+  color: white;
+  border-radius: 10px;
+  
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+#technologies li span::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-bottom: 10px solid var(--gray);
+}
+
+#technologies li:hover span {
+  opacity: 1;
 }
 
 @media (max-width: 1080px) {
