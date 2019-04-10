@@ -53,4 +53,9 @@ projectImages.forEach((image) => {
 });
 
 
+// Update Copyright Year
+const year = document.getElementById('year');
+year.textContent = new Date().getFullYear();
+
+
 
