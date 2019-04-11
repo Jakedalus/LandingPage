@@ -24,7 +24,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: transparent;
+  background-color: var(--darkgray);
+/*  background-color: transparent;  */
 }
 
 .container {

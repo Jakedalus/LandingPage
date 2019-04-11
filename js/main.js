@@ -58,4 +58,37 @@ const year = document.getElementById('year');
 year.textContent = new Date().getFullYear();
 
 
+// Scroll behavior
+const introSection = document.querySelector('#intro');
+const servicesSection = document.querySelector('#services');
+
+window.addEventListener('scroll', () => {
+//  console.log("introSection:", introSection.getBoundingClientRect());
+  console.log("servicesSection:", servicesSection.getBoundingClientRect().top);
+  console.log("window.innerHeight:", window.innerHeight);
+//  console.log("shrink navbar:", introSection.getBoundingClientRect().bottom - window.innerHeight <= 0);
+  console.log("highlight SERVICES:", servicesSection.getBoundingClientRect().top <= 10);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
