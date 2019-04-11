@@ -61,13 +61,67 @@ year.textContent = new Date().getFullYear();
 // Scroll behavior
 const introSection = document.querySelector('#intro');
 const servicesSection = document.querySelector('#services');
+const portfolioSection = document.querySelector('#portfolio');
+const aboutSection = document.querySelector('#about');
+const teamSection = document.querySelector('#team');
+const contactSection = document.querySelector('#contact');
+
+const header = document.querySelector('header');
+const home = document.querySelector('#home-page');
+const headerContainer = document.querySelector('header .container');
+const servicesNav = document.querySelector('a[href="#services"]');
+const portfolioNav = document.querySelector('a[href="#portfolio"]');
+const aboutNav = document.querySelector('a[href="#about"]');
+const teamNav = document.querySelector('a[href="#team"]');
+const contactNav = document.querySelector('a[href="#contact"]');
 
 window.addEventListener('scroll', () => {
-//  console.log("introSection:", introSection.getBoundingClientRect());
-  console.log("servicesSection:", servicesSection.getBoundingClientRect().top);
-  console.log("window.innerHeight:", window.innerHeight);
+//  console.log("window.innerHeight:", window.innerHeight);
 //  console.log("shrink navbar:", introSection.getBoundingClientRect().bottom - window.innerHeight <= 0);
-  console.log("highlight SERVICES:", servicesSection.getBoundingClientRect().top <= 10);
+//  console.log("highlight SERVICES:", servicesSection.getBoundingClientRect().top <= 10);
+  
+  // Shrink navbar and make background darkgray
+  if (introSection.getBoundingClientRect().bottom - window.innerHeight <= 0) {
+    header.style.backgroundColor = 'var(--darkgray)';
+    home.style.fontSize = '25px';
+    headerContainer.style.padding = '10px 100px';
+  } else if (introSection.getBoundingClientRect().top <= 10) {
+    header.style.backgroundColor = 'transparent';
+    home.style.fontSize = '30px';
+    headerContainer.style.padding = '20px 100px';
+  }
+  
+  //Highlight the navbar links when section is in view
+  if (servicesSection.getBoundingClientRect().top <= 10 && servicesSection.getBoundingClientRect().bottom >= 10) {
+    servicesNav.style.color = 'orange';
+  } else {
+    servicesNav.style.color = 'white';
+  }
+  
+  if (portfolioSection.getBoundingClientRect().top <= 10 && portfolioSection.getBoundingClientRect().bottom >= 10) {
+    portfolioNav.style.color = 'orange';
+  } else {
+    portfolioNav.style.color = 'white';
+  }
+  
+  if (aboutSection.getBoundingClientRect().top <= 10 && aboutSection.getBoundingClientRect().bottom >= 10) {
+    aboutNav.style.color = 'orange';
+  } else {
+    aboutNav.style.color = 'white';
+  }
+  
+  if (teamSection.getBoundingClientRect().top <= 10 && teamSection.getBoundingClientRect().bottom >= -100) {
+    teamNav.style.color = 'orange';
+  } else {
+    teamNav.style.color = 'white';
+  }
+  
+  if (contactSection.getBoundingClientRect().top <= 100) {
+    contactNav.style.color = 'orange';
+  } else {
+    contactNav.style.color = 'white';
+  }
+  
 });
 
 
