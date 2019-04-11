@@ -428,20 +428,24 @@ section h3 {
 }
 
 #contact-form {
-  display: grid;
-  grid-template-areas:
-    "left   right"
-    "left   right"
-    "submit submit";
+  display: flex;
+  flex-direction: column;
   width: 900px;
   margin: 0 auto;
 }
 
-#contact-form div {
-  grid-area: left;
+.contact-form__content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
+
+.contact-form__inputs {
+  width: 420px;
+}
+
 
 #contact-form input, #contact-form textarea, #contact-form button {
   margin: 10px;
@@ -456,7 +460,6 @@ section h3 {
 }
 
 #contact-form textarea {
-  grid-area: right;
   height: 170px;
   width: 400px;
   padding: 10px;

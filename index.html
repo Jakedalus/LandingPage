@@ -226,12 +226,14 @@
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.</h3>
         <form id="contact-form" action="https://www.freecodecamp.com/email-submit">
-          <div>
-            <input type="text" id="name" placeholder="Your Name*">
-            <input type="email" id="email" placeholder="Your Email*">
-            <input type="text" id="phone" placeholder="Your Phone">
+          <div class="contact-form__content">
+            <div class="contact-form__inputs">
+              <input type="text" id="name" placeholder="Your Name*">
+              <input type="email" id="email" placeholder="Your Email*">
+              <input type="text" id="phone" placeholder="Your Phone">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
           </div>
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
           <button>SEND MESSAGE</button>
         </form>
       </section>
