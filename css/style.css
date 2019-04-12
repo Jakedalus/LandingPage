@@ -314,7 +314,7 @@ section h3 {
   border-radius: 50%;
   border: 8px solid var(--lightgray);
   margin-left: 0px;
-  margin-right: 320px;
+  margin-right: 320px; 
 }
 
 .timeline-point--right img {
@@ -575,6 +575,11 @@ footer .social-media {
 
 @media (max-width: 850px) {
   
+  h3 {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
   .row {
     display: flex;
     flex-direction: column;
@@ -610,6 +615,55 @@ footer .social-media {
   .project-detail img, .project-detail p {
     width: 500px;
   }
+  
+  #timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 120px;
+    left: 129px;
+    width: 4px;
+    content: '';
+    background-color: var(--lightgray);
+    z-index: -1;
+  /*  background-color: red;*/
+  }
+
+  .timeline-point {
+    margin: 100px 10px;
+    width: 600px;
+    flex-direction: row-reverse;
+/*    justify-content: space-between;*/
+    text-align: left;
+  }
+  
+  .timeline-point h4 {
+    margin: 5px 0 10px 0;
+  }
+  
+  .timeline-point img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 6px solid var(--lightgray);
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  
+  .timeline-point__text {
+    width: 400px;
+    padding-right: 20px;
+  }
+
+  .timeline-point--right .timeline-point__text {
+    width: 400px;
+    padding-right: 20px;
+    padding-left: 0px;
+  }
+  
+  .timeline-point__text p {
+    width: 350px;
+  }
+
   
   
 } 
