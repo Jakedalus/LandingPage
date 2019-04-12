@@ -45,7 +45,7 @@ projectImages.forEach((image) => {
     
     // update top and opacity styles .2s after change display to block
     setTimeout(() => {
-      detail.style.top = '50%';  // creates slight top down movement animation
+      detail.style.top = '55%';  // creates slight top down movement animation
       detail.style.opacity = '1';
     }, 200);
     
