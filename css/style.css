@@ -616,11 +616,17 @@ footer .social-media {
     width: 500px;
   }
   
+  #timeline {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
   #timeline:before {
     position: absolute;
     top: 0;
     bottom: 120px;
-    left: 129px;
+    left: 74px;
+
     width: 4px;
     content: '';
     background-color: var(--lightgray);
@@ -629,10 +635,11 @@ footer .social-media {
   }
 
   .timeline-point {
-    margin: 100px 10px;
-    width: 600px;
+    margin: 100px auto;
+    width: 510px;
     flex-direction: row-reverse;
 /*    justify-content: space-between;*/
+/*    justify-content: space-around;*/
     text-align: left;
   }
   
@@ -646,22 +653,23 @@ footer .social-media {
     border-radius: 50%;
     border: 6px solid var(--lightgray);
     margin-left: 0px;
-    margin-right: 20px;
+    margin-right: 5px;
   }
   
   .timeline-point__text {
-    width: 400px;
+    width: 350px;
     padding-right: 20px;
+    margin-left: 20px;
   }
 
   .timeline-point--right .timeline-point__text {
-    width: 400px;
+    width: 350px;
     padding-right: 20px;
     padding-left: 0px;
   }
   
   .timeline-point__text p {
-    width: 350px;
+    width: 300px;
   }
 
   
