@@ -1,7 +1,21 @@
+const introSection = document.querySelector('#intro');
+const servicesSection = document.querySelector('#services');
+const portfolioSection = document.querySelector('#portfolio');
+const aboutSection = document.querySelector('#about');
+const teamSection = document.querySelector('#team');
+const contactSection = document.querySelector('#contact');
 
-// Hamburger menu in navbar
+const header = document.querySelector('header');
 const hamburger = document.querySelector('#hamburger');
 const innerNav = document.querySelector('#inner-nav');
+const home = document.querySelector('#home-page');
+const headerContainer = document.querySelector('header .container');
+const servicesNav = document.querySelector('a[href="#services"]');
+const portfolioNav = document.querySelector('a[href="#portfolio"]');
+const aboutNav = document.querySelector('a[href="#about"]');
+const teamNav = document.querySelector('a[href="#team"]');
+const contactNav = document.querySelector('a[href="#contact"]');
+
 
 // open and close nav links on click hamburger
 hamburger.addEventListener('click', () => {
@@ -59,21 +73,7 @@ year.textContent = new Date().getFullYear();
 
 
 // Scroll behavior
-const introSection = document.querySelector('#intro');
-const servicesSection = document.querySelector('#services');
-const portfolioSection = document.querySelector('#portfolio');
-const aboutSection = document.querySelector('#about');
-const teamSection = document.querySelector('#team');
-const contactSection = document.querySelector('#contact');
 
-const header = document.querySelector('header');
-const home = document.querySelector('#home-page');
-const headerContainer = document.querySelector('header .container');
-const servicesNav = document.querySelector('a[href="#services"]');
-const portfolioNav = document.querySelector('a[href="#portfolio"]');
-const aboutNav = document.querySelector('a[href="#about"]');
-const teamNav = document.querySelector('a[href="#team"]');
-const contactNav = document.querySelector('a[href="#contact"]');
 
 window.addEventListener('scroll', () => {
 //  console.log("window.innerHeight:", window.innerHeight);
@@ -83,10 +83,12 @@ window.addEventListener('scroll', () => {
   // Shrink navbar and make background darkgray
   if (introSection.getBoundingClientRect().bottom - window.innerHeight <= 0) {
     header.style.backgroundColor = 'var(--darkgray)';
+    innerNav.style.backgroundColor = 'var(--darkgray)';
     home.style.fontSize = '25px';
     headerContainer.style.padding = '10px 100px';
   } else if (introSection.getBoundingClientRect().top <= 10) {
     header.style.backgroundColor = 'transparent';
+    innerNav.style.backgroundColor = 'transparent';
     home.style.fontSize = '30px';
     headerContainer.style.padding = '20px 100px';
   }

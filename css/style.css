@@ -76,6 +76,7 @@ nav li:hover {
 #inner-nav {
   transition: transform .2s ease-in-out;
   transform-origin: top;
+  padding: 10px 15px 10px 0;
 }
 
 #hamburger {
@@ -540,8 +541,8 @@ footer .social-media {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 20px;
+    top: 45px;
+    right: 7px;
 
     transform: scaleY(0);
   }
