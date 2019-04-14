@@ -797,6 +797,53 @@ footer .social-media {
 }
 
 @media (max-width: 500px) {
+  
+  /* SERVICES */
+  .service {
+    width: 400px;
+  }
+  
+  
+  /* PORTFOLIO */
+  
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .project {
+    width: 400px;
+  }
+  
+  .project img, .zoom {
+    width: 400px;
+    height: 285.714px;
+
+  }
+  
+  .fa-plus {
+    padding: 115px 0;
+  }
+
+  .project-detail__content {
+    background: white;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .project-detail img, .project-detail p {
+    width: 400px;
+  }
+  
+  
+  /* TEAM */
+  
+  
+  
+  
+  /* CONTACT FORM */
+  
   #contact-form {
     width: 360px;
   }
