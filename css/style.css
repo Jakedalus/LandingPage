@@ -407,6 +407,7 @@ section h3 {
   background: var(--gray);
   color: white;
   border-radius: 10px;
+  z-index: 3;
   
   opacity: 0;
   transition: opacity .2s ease-in-out;
@@ -708,6 +709,12 @@ footer .social-media {
     align-items: center;
     justify-content: center;
   }
+  
+  #technologies ul {
+    flex-wrap: wrap;
+  }
+  
+  
 } 
 
 @media (max-width: 600px) {
