@@ -447,7 +447,7 @@ section h3 {
 #contact-form {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -460,7 +460,7 @@ section h3 {
 }
 
 .contact-form__inputs {
-  width: 420px;
+  width: 400px;
 }
 
 
@@ -472,13 +472,13 @@ section h3 {
 
 #contact-form input {
   height: 50px;
-  width: 400px;
+  width: 350px;
   padding: 0 10px;
 }
 
 #contact-form textarea {
   height: 170px;
-  width: 400px;
+  width: 350px;
   padding: 10px;
 }
 
@@ -714,9 +714,54 @@ footer .social-media {
     flex-wrap: wrap;
   }
   
+  #contact-form {
+    width: 600px;
+  }
+  
+  .contact-form__inputs {
+    width: 300px;
+  }
+
+  #contact-form input {
+    width: 250px;
+  }
+
+  #contact-form textarea {
+    width: 250px;
+  }
+  
   
 } 
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+  
+  .contact-form__content {
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #contact-form {
+    width: 460px;
+  }
+  
+  .contact-form__inputs {
+    width: 460px;
+  }
+
+  #contact-form input {
+    width: 450px;
+    margin: 10px auto;
+  }
+
+  #contact-form textarea {
+    width: 450px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media (max-width: 500px) {
   
 }
