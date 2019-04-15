@@ -514,8 +514,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
-/*  width: 900px;*/
+  justify-content: space-between;
+  text-align: center;
   margin: 0 50px;
 }
 
