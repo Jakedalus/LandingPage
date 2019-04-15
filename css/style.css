@@ -320,6 +320,7 @@ section h3 {
   border: 8px solid var(--lightgray);
   margin-left: 0px;
   margin-right: 320px; 
+  object-fit: cover;
 }
 
 .timeline-point--right img {
