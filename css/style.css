@@ -195,6 +195,7 @@ section h3 {
   cursor: pointer;
   transition: opacity 0.3s ease-in;
   z-index: 1;
+  object-fit: cover;
 }
 
 .zoom {
@@ -259,6 +260,7 @@ section h3 {
 .project-detail img, .project-detail p {
   width: 700px;
   margin: 10px auto;
+  object-fit: cover;
 }
 
 .close-project-detail {
