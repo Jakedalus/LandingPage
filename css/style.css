@@ -123,13 +123,16 @@ section h3 {
 /* INTRO SECTION */
 #intro {
   height: 500px;
-  background: gray;
-  background-image: url(/images/desk_background.jpg);
+  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7) url(/images/desk_background.jpg);
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   color: white;
 }
+
+
 
 #intro h1 {
   font-size: 4em;
