@@ -123,8 +123,8 @@ section h3 {
 /* INTRO SECTION */
 #intro {
   height: 500px;
-  background: rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.7) url(/images/desk_background.jpg);
+  background-image: url(/images/desk_background.jpg);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center center;
@@ -446,7 +446,9 @@ section h3 {
 /* CONTACT SECTION */
 
 #contact {
+  background-color: rgba(0, 0, 0, 0.3);
   background-image: url(/images/earth.jpg);
+  background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
