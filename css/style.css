@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,600|Oleo+Script:400,700');
+
 :root {
   --offwhite: #F8F9FA;
   --lightgray: #E9ECEF;
@@ -47,9 +49,30 @@ header .container {
 /*   padding: 50px 0; */
   font-size: 30px;
   color: darkorange;
-  font-style: italic;
-  
+  font-family: 'Oleo Script', cursive;
   transition: font-size .2s ease-in;
+}
+
+h1, h2, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+#intro h2, h3, h5, p {
+  font-family: 'Merriweather', serif;
+}
+
+#intro h2 {
+  font-style: italic;
+}
+
+h4 {
+  font-size: 25px;
 }
 
 nav {
@@ -61,7 +84,6 @@ nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 nav li {
@@ -135,11 +157,12 @@ section h3 {
 
 
 #intro h1 {
-  font-size: 4em;
+  font-size: 6em;
+  margin: 20px 0 60px 0;
 }
 
 #intro h2 {
-  padding-top: 100px;
+  padding-top: 90px;
   font-size: 3em;
 }
 
@@ -154,12 +177,18 @@ section h3 {
   padding: 20px 40px;
   cursor: pointer;
   text-decoration: none;
+  font-weight: bold;
+}
+
+#intro .button:hover {
+  background: darkorange;
 }
 
 /* SERVICES SECTIONS*/
 
 .service {
-  width: 350px;
+  width: 325px;
+  line-height: 26px;
 }
 
 .service-icon {
@@ -225,9 +254,9 @@ section h3 {
 
 
 .project h4 {
-  font-size: 20px;
   margin: 0;
   padding-top: 30px;
+  margin-bottom: 5px;
 }
 
 .project h5 {
@@ -252,6 +281,16 @@ section h3 {
   opacity: 0;
   
   transition: top .2s ease-in, opacity .2s ease-in;
+}
+
+.project-detail h4 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 40px 0 20px 0;
+}
+
+.project-detail h5 {
+  font-style: italic;
 }
 
 .project-detail__content {
@@ -329,6 +368,11 @@ section h3 {
 .timeline-point--right img {
   margin-left: 320px;
   margin-right: 0px;
+}
+
+.timeline-point h4 {
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 
