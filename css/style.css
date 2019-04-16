@@ -320,12 +320,14 @@ section h3 {
 
 #timeline {
   position: relative;
+  width: 850px;
+  margin: 0 auto;
 }
 
 #timeline:before {
   position: absolute;
   top: 0;
-  bottom: 30px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-2px);
   width: 4px;
@@ -337,14 +339,18 @@ section h3 {
 
 .timeline-point {
   display: flex;
-  margin: 100px auto;
-  width: 806px;
+  width: 100%;
+  margin: 100px 0;
   text-align: right;
+  margin-left: 50px;
+  
 }
 
 .timeline-point--right {
   flex-direction: row-reverse;
   text-align: left;
+  margin-left: -50px;
+/*  margin-right: 150px;*/
 }
 
 .timeline-point__text {
@@ -356,6 +362,7 @@ section h3 {
   width: 300px;
   padding-right: 0px;
   padding-left: 20px;
+  
 }
 
 .timeline-point img {
@@ -363,15 +370,9 @@ section h3 {
   height: 150px;
   border-radius: 50%;
   border: 8px solid var(--lightgray);
-  margin-left: 0px;
-  margin-right: 320px; 
   object-fit: cover;
 }
 
-.timeline-point--right img {
-  margin-left: 320px;
-  margin-right: 0px;
-}
 
 .timeline-point h4 {
   margin: 0;
