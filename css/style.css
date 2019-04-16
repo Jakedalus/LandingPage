@@ -949,8 +949,8 @@ footer .social-media {
   #timeline:before {
     position: absolute;
     top: 0;
-    bottom: 120px;
-    left: 55px;
+    bottom: 220px;
+    left: 80px;
 
     width: 4px;
     content: '';
