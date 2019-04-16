@@ -64,6 +64,7 @@ h1, h2, h4 {
 a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  text-decoration: none;
 }
 
 #intro h2, h3, h5, p {
@@ -819,7 +820,7 @@ footer .social-media {
   /* CONTACT FORM */
   
   #contact-form {
-    width: 100%;
+    width: 645px;
   }
   
   .contact-form__inputs {
@@ -874,6 +875,10 @@ footer .social-media {
 } 
 
 @media (max-width: 650px) {
+  
+  .container {
+    padding: 20px 10px;
+  }
   
   /* TEAM */
   
