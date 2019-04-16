@@ -505,20 +505,21 @@ section h3 {
 #contact-form {
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 90%;
   margin: 0 auto;
+  
 }
 
 .contact-form__content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .contact-form__inputs {
-  width: 400px;
+  width: 45%;
 }
 
 
@@ -526,18 +527,19 @@ section h3 {
   margin: 10px;
   border-radius: 5px;
   border: none;
+  font-size: 16px;
 }
 
 #contact-form input {
-  height: 50px;
-  width: 350px;
+  height: 70px;
+  width: 100%;
   padding: 0 10px;
 }
 
 #contact-form textarea {
-  height: 170px;
-  width: 350px;
-  padding: 10px;
+  height: 210px;
+  width: 45%;
+  padding: 20px;
 }
 
 #contact-form button {
