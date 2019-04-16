@@ -710,7 +710,7 @@ footer .social-media {
   #timeline:before {
     position: absolute;
     top: 0;
-    bottom: 120px;
+    bottom: 150px;
     left: 100px;
 
     width: 4px;
