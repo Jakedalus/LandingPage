@@ -14,15 +14,19 @@
     <header id="header">
     
       <div class="container">
-        <a id="home-page" href="#intro">Our Agency</a>
+       
+        <a id="home-page" href="#intro">
+          <img id="header-img" src="/images/picture.png" alt="logo">
+          Our Agency
+        </a>
         
         <nav id="nav-bar">
           <div id="inner-nav">
-            <a href="#services"><li class="nav-link">Services</li></a>
-            <a href="#portfolio"><li class="nav-link">Portolfio</li></a>
-            <a href="#about"><li class="nav-link">About</li></a>
-            <a href="#team"><li class="nav-link">Team</li></a>
-            <a href="#contact"><li class="nav-link">Contact</li></a>
+            <a href="#services" class="nav-link"><li>Services</li></a>
+            <a href="#portfolio" class="nav-link"><li>Portolfio</li></a>
+            <a href="#about" class="nav-link"><li>About</li></a>
+            <a href="#team" class="nav-link"><li>Team</li></a>
+            <a href="#contact" class="nav-link"><li>Contact</li></a>
           </div>
           
           <a id="hamburger">
@@ -166,6 +170,8 @@
           </div>
         </div>
         
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/xLetZ-36TYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
       </section>
 
       <section id="team">
@@ -224,7 +230,7 @@
         <h2>CONTACT US</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.</h3>
-        <form id="contact-form" action="https://www.freecodecamp.com/email-submit">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
           <div class="contact-form__content">
             <div class="contact-form__inputs">
               <input type="text" id="name" placeholder="Your Name *" required>
@@ -235,7 +241,7 @@
               <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message *" required></textarea>
             </div>
           </div>
-          <button>SEND MESSAGE</button>
+          <input type="submit" value="SEND MESSAGE"/>
         </form>
       </section>
     </main>
@@ -251,6 +257,7 @@
         <p>Privacy Policy</p>
         <p>Terms of Use</p>
       </div>
+      
     </footer>
     
     <!-- PROJECT DETAIL MODALS    -->
